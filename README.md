@@ -132,4 +132,100 @@ This reduced model complexity while maintaining high performance.
 
 ---
 
-# 7️⃣ Cross-Vali
+# 7️⃣ Cross-Validation
+
+- 10-Fold Cross-Validation
+- Optimal mtry = 7
+- Final Model:
+  - ntree = 500
+  - mtry = 7
+  - OOB Error = 4.23%
+  - OOB Accuracy = 95.77%
+
+---
+
+# 8️⃣ Model Evaluation
+
+## 🔹 Confusion Matrix Results
+
+| Metric | Value |
+|--------|--------|
+| Accuracy | 94.49% |
+| Precision | 89.13% |
+| Recall | 70.69% |
+| F1 Score | 0.7885 |
+| Specificity | 98.54% |
+
+The model performs very well in identifying non-churn customers and maintains strong precision in churn prediction.
+
+---
+
+## 🔹 ROC Curve & AUC
+
+- 📈 AUC Score: **0.9194**
+
+An AUC above 0.9 indicates excellent classification ability and strong discrimination between churn and non-churn customers.
+
+---
+
+# 9️⃣ Feature Importance
+
+Top most influential predictors:
+
+1. International Plan
+2. Customer Service Calls
+3. International Calls
+4. Day Charge
+5. Day Minutes
+
+These variables significantly influence customer churn behavior.
+
+---
+
+# 🔟 Conclusion
+
+The Random Forest model successfully identified key drivers of churn with high predictive performance.
+
+### Key Findings:
+- Customers with International Plans show distinct churn patterns.
+- Higher Customer Service Calls strongly correlate with churn.
+- Usage charges and minutes significantly impact churn probability.
+
+### Business Impact:
+Telecom companies can:
+- Monitor customers with frequent service calls.
+- Offer targeted retention plans.
+- Improve customer support quality.
+- Optimize plan pricing strategies.
+
+---
+
+# 🛠 Tools & Packages Used
+
+- dplyr
+- ggplot2
+- corrplot
+- caret
+- randomForest
+- VSURF
+- pROC
+- tidyverse
+- car
+
+---
+
+# 📚 References
+
+- Machine Learning with Random Forests – Scott Hartshorn
+- R in Action – Robert Kabacoff
+- Kaggle Dataset Source
+
+---
+
+# 👩‍💻 Author
+
+**Devika**  
+Postgraduate in Mathematics with Data Science  
+Interested in Machine Learning, Statistical Modeling & Predictive Analytics  
+
+
